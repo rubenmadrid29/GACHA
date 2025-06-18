@@ -1,4 +1,4 @@
-BANNERS  => {
+BANNERS= {
             "banner_1" => {
               "name" => "Banner de Inicio",
               "bg" => "Graphics/Battlebacks/champion1_bg",
