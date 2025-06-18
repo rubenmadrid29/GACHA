@@ -1,11 +1,11 @@
 BANNERS = {
  	"banner_1" => {
-              "name" => "Banner de Inicio",
-              "bg" => "Graphics/Battlebacks/champion1_bg",
-              "rewards" => ["Graphics/Pokemon/Badgecase/RALTS", "Graphics/Pokemon/Badgecase/PIDOVE",
+              "name" = "Banner de Inicio",
+              "bg" = "Graphics/Battlebacks/champion1_bg",
+              "rewards" = ["Graphics/Pokemon/Badgecase/RALTS", "Graphics/Pokemon/Badgecase/PIDOVE",
               "Graphics/Pokemon/Badgecase/MELOETTA"],
-              "stars" => [5, 5, 5],
-              "url" => "http://raw.githubusercontent.com/rubenmadrid29/GACHA/refs/heads/main/banner_n.txt",
-              "descr" =>  "Empieza la fiesta."
+              "stars" = [5, 5, 5],
+              "url" = "http://raw.githubusercontent.com/rubenmadrid29/GACHA/refs/heads/main/banner_n.txt",
+              "descr" =  "Empieza la fiesta."
               }
       }
