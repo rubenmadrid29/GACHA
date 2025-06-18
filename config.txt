@@ -1,6 +1,6 @@
 BANNERS = {
  	"banner_1" => {
-	      "name" => "Banner de Inicio",
+              "name" => "Banner de Inicio",
               "bg" => "Graphics/Battlebacks/champion1_bg",
               "rewards" => ["Graphics/Pokemon/Badgecase/RALTS", "Graphics/Pokemon/Badgecase/PIDOVE",
               "Graphics/Pokemon/Badgecase/MELOETTA"],
