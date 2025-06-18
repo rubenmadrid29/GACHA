@@ -1,9 +1,12 @@
-prob = rand(100)
+ prob = rand(100)
   case prob
   when (0...35) #Tier 1 con un 35%
    pokes = [:BIDOOF, :GOLDEEN, :RALTS,:PIDOVE,:PATRAT]
     result = pokes[rand(pokes.length)]
-    pokeReward(pbAddPokemon(result,20),1)
+    pkmn = Pokemon.new(result, 15)
+    pkmn.item = :ORANBERRY
+    pkmn.calc_stats
+    pokeReward(pbAddPokemon(pkmn),1)
   when (35...75) #Tier 2 con un 40%
     result = rand(10)
    if (5..7).include?(result)
