@@ -1,0 +1,57 @@
+prob = rand(100)
+  case prob
+  when (0...35) #Tier 1 con un 35%
+   pokes = [:BIDOOF, :GOLDEEN, :RALTS,:PIDOVE,:PATRAT]
+    result = pokes[rand(pokes.length)]
+    pokeReward(pbAddPokemon(result,20),1)
+  when (35...75) #Tier 2 con un 40%
+    result = rand(10)
+   if (5..7).include?(result)
+      poke = pbAddPokemon(:ABRA,20)
+      pokeReward(poke,2)
+    elsif (7..8).include?(result)
+      poke = pbAddPokemon(:PICHU,20)
+      pokeReward(poke,2)
+    else
+      pokes = [:PICHU, :DROWZEE, :EKANS] 
+      result = pokes[rand(pokes.length)]
+      pokeReward(poke = pbAddPokemon(result,20),2)
+    end
+  when (75...90) #Tier 3 con un 15%
+    result = rand(10)
+  if (0..3).include?(result)
+      poke = poke = pbAddPokemon(:EEVEE,20)
+      pokeReward(poke,3)
+    elsif (4..7).include?(result)
+      poke = poke = pbAddPokemon(:BAGON,20)
+      pokeReward(poke,3)
+    else
+      poke = poke = pbAddPokemon(:DRATINI,20)
+      pokeReward(poke,3)
+    end
+  when (90...97) #Tier 4 con un 7%
+    result = rand(10)
+    if result > 7
+      poke = pbAddPokemon(:JOLTEON,20)
+      pokeReward(poke,4)
+    else
+      itemReward(:MAXETHER,4)
+    end
+  when (97...100) #Tier 5 con un 3%
+    result = rand(10)
+    if (0..3).include?(result)
+      poke = pbAddPokemon(:JIRACHI,20)
+      poke.calcStats
+      pokeReward(poke,5)
+    elsif (4..5).include?(result)
+      poke = pbAddPokemon(:MANAPHY,20)
+      poke.calcStats
+      pokeReward(poke,5)
+    elsif (6..7)
+     poke = pbAddPokemon(:MELOETTA,20)
+      poke.calcStats
+      pokeReward(poke,5)
+    else
+      itemReward(:MASTERBALL,5)
+    end
+  end

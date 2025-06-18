@@ -1,0 +1,10 @@
+      "banner_1" => {
+              "name" => "Banner de Inicio",
+              "bg" => "Graphics/Battlebacks/battlebgChampion",
+              "rewards" => ["Graphics/Battlers/385", "Graphics/Battlers/490",
+              "Graphics/Battlers/648"],
+              "stars" => [5, 5, 5],
+              "url" => "http://pokemonpurple.000webhostapp.com/gacha/banner_n.txt",
+              "descr" =>  "Empieza la fiesta."
+              }
+      }
